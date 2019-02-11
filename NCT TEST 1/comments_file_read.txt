@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+/*
+hello world
+basic program
+*/
+//main method
+int fun()
+{
+	//prints the content inside quotes
+	printf("HELLO	WORLD	\n");
+	_getch();
+	//return statement
+	return 0;
+}

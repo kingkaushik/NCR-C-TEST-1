@@ -23,6 +23,7 @@
     <ProjectGuid>{B0E053D5-7091-485D-B3B1-9E0E1A88E21D}</ProjectGuid>
     <RootNamespace>NCTTEST1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>NCR TEST 1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -115,6 +116,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="comments_file_read.txt" />
+    <ClCompile Include="count_character_types_into_file.c" />
+    <ClCompile Include="file_matching_word_rotator.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="remove_comments_from_a_file.c" />
+    <ClCompile Include="replace_tabs.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="character_count_write.txt" />
+    <Text Include="character_count_read.txt" />
+    <Text Include="comment_file_write.txt" />
+    <Text Include="rotate_read.txt" />
+    <Text Include="rotate_write.txt" />
+    <Text Include="tabs_read.txt" />
+    <Text Include="tabs_write.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

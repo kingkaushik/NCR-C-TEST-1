@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<conio.h>
+
+int fun()
+{
+		printf("HELLO	WORLD	\n");
+	_getch();
+		return 0;
+}
