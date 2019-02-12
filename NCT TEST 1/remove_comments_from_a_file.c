@@ -31,13 +31,15 @@ void remove_comments_from_a_file(char file_path[])
 				ch1 = '/';
 			else if(ch1 == '/' &&  ch2!='/')
 			{
-				fputc(ch1, fptr2);
+				if (ch1 != EOF)
+					fputc(ch1, fptr2);
 				ch1 = '\0';
-				fputc(ch2, fptr2);
+				if (ch2 != EOF)
+					fputc(ch2, fptr2);
 			}
 			else
 			{
-				if (ch2 != 'ÿ')
+				if (ch2 != EOF)
 					fputc(ch2, fptr2);
 			}
 		}

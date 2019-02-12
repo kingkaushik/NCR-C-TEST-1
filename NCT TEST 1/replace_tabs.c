@@ -13,10 +13,12 @@ void replace_tabs()
 			char ch = fgetc(fptr);
 			if ( ch == '\t')
 			{
-				
-				fputs("\\t", fptr2);
+				char x = '\\';
+				fputc(x, fptr2);
+				x = 't';
+				fputc(x, fptr2);
 			}
-			if(ch!='ÿ')
+			else if(ch!=EOF)
 				fputc(ch,fptr2);
 		}
 		printf("\nSUCCESSFULLY WRITTEN TO FILE");
